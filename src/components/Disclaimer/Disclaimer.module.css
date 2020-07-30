@@ -1,0 +1,14 @@
+.Box {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+
+.Disclaimer {
+    font-size: smaller;
+    text-align: center;
+}
+
+.Copyright {
+    text-align: center;
+}

@@ -1,0 +1,219 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "Pizza",
+        "avg_price": null,
+        "sizes": [
+          {
+            "id": 1,
+            "size": "X-Large",
+            "display": "X-Large",
+            "avgprice": null
+          },
+          {
+            "id": 3,
+            "size": "Medium",
+            "display": "Medium",
+            "avgprice": null
+          },
+          {
+            "id": 4,
+            "size": "Large",
+            "display": "Large",
+            "avgprice": null
+          },
+          {
+            "id": 8,
+            "size": "Small",
+            "display": "Small",
+            "avgprice": null
+          },
+          {
+            "id": 10,
+            "size": "Party Tray",
+            "display": "Party Tray",
+            "avgprice": null
+          }
+        ],
+        "options": [
+          {
+            "option": "topping",
+            "display": "topping",
+            "avgprice": null
+          },
+          {
+            "option": "premium_topping",
+            "display": "premium_topping",
+            "avgprice": null
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Pop Bottle",
+        "avg_price": null,
+        "sizes": [
+          {
+            "id": 2,
+            "size": "591ml",
+            "display": "591ml",
+            "avgprice": null
+          },
+          {
+            "id": 9,
+            "size": "2L",
+            "display": "2L",
+            "avgprice": null
+          }
+        ],
+        "options": [
+          {
+            "option": 0,
+            "display": "------",
+            "avgprice": 0
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Dipping Sauce",
+        "avg_price": null,
+        "sizes": [
+          {
+            "id": 0,
+            "size": "------",
+            "display": "------",
+            "avgprice": 0
+          }
+        ],
+        "options": [
+          {
+            "option": 0,
+            "display": "------",
+            "avgprice": 0
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Panzerotti",
+        "avg_price": null,
+        "sizes": [
+          {
+            "id": 5,
+            "size": "7-inch",
+            "display": "7-inch",
+            "avgprice": null
+          }
+        ],
+        "options": [
+          {
+            "option": "topping",
+            "display": "topping",
+            "avgprice": null
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Marinari Sauces",
+        "avg_price": null,
+        "sizes": [
+          {
+            "id": 0,
+            "size": "------",
+            "display": "------",
+            "avgprice": 0
+          }
+        ],
+        "options": [
+          {
+            "option": 0,
+            "display": "------",
+            "avgprice": 0
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Wings",
+        "avg_price": null,
+        "sizes": [
+          {
+            "id": 6,
+            "size": "10-pack",
+            "display": "10-pack",
+            "avgprice": null
+          }
+        ],
+        "options": [
+          {
+            "option": 0,
+            "display": "------",
+            "avgprice": 0
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Bites",
+        "avg_price": null,
+        "sizes": [
+          {
+            "id": 7,
+            "size": "16-Flavoured",
+            "display": "16-Flavoured",
+            "avgprice": null
+          }
+        ],
+        "options": [
+          {
+            "option": 0,
+            "display": "------",
+            "avgprice": 0
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Breaded Wings",
+        "avg_price": null,
+        "sizes": [
+          {
+            "id": 11,
+            "size": "8-pack",
+            "display": "8-pack",
+            "avgprice": null
+          }
+        ],
+        "options": [
+          {
+            "option": 0,
+            "display": "------",
+            "avgprice": 0
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Caesar Salad",
+        "avg_price": null,
+        "sizes": [
+          {
+            "id": 12,
+            "size": "Side",
+            "display": "Side",
+            "avgprice": null
+          }
+        ],
+        "options": [
+          {
+            "option": 0,
+            "display": "------",
+            "avgprice": 0
+          }
+        ]
+      }
+    ]
+  }

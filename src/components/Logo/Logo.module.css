@@ -1,0 +1,13 @@
+.Image
+{
+    height: 50px;
+    width: auto;
+    padding: 5px;
+}
+
+.Text
+{
+    height: 50px;
+    padding: 5px;
+    font-size: xx-large;
+}

@@ -1,25 +1,67 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, useCallback } from 'react';
+import Layout from './hoc/Layout/Layout';
 
-function App() {
+import serverFetch from './util/serverfetch';
+
+import TopDeals from './containers/TopDeals/TopDeals';
+import SearchOutput from './containers/SearchOutput/SearchOutput';
+import DealProviders from './components/DealProviders/DealProviders';
+import SearchBox from './containers/SearchBox/SearchBox';
+
+
+const App = (props) => {
+  //set Initial States
+  const [topDeals, setTopDeals] = useState(null);
+  const [dealInfo, setDealInfo] = useState(null);
+  const [providers, setProviders] = useState(null);
+  const [searchDisplay, setSearchDisplay] = useState(true);
+  const [searchCriteria, setSearchCriteria] = useState({});
+  const [initial, setInitial] = useState(true);
+  
+  //on first load, pull deal providers and top deals
+  const onInitTopDeals = useCallback(() => {
+    //get top deals
+    serverFetch('/topdeals')
+    .then(response => {
+      setTopDeals(response);
+    })
+  }, [setTopDeals]);
+  const onInitProviders = useCallback(() => {
+    //get providers
+    serverFetch('/providers')
+    .then(response => {
+      setProviders(response);
+    })
+  }, [setProviders]);
+
+  useEffect(() => {
+    onInitTopDeals();
+    onInitProviders();
+}, [onInitTopDeals, onInitProviders]);
+
+  //search trigger
+  const onSearchClick = () => {
+    if (!searchDisplay) {
+      setSearchDisplay(true);
+    } else {
+      serverFetch('/search', searchCriteria)
+      .then(response => {
+        setDealInfo(response);
+        setSearchDisplay(false);
+        setInitial(false);
+      });
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <TopDeals deals={topDeals}></TopDeals>
+      
+      <SearchBox searchClick={onSearchClick} searchDisplay={searchDisplay} setSearchCriteria={setSearchCriteria}></SearchBox>
+      <SearchOutput deals={dealInfo} initial={initial} ></SearchOutput>
+
+      <DealProviders providers={providers} ></DealProviders>
+    </Layout>
   );
 }
 

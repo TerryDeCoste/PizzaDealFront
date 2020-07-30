@@ -1,0 +1,35 @@
+.Container {
+    width: 100%;
+    margin: 10px;
+    padding: 0px;
+}
+
+.Label {
+    font-size: larger;
+}
+
+.ProviderBox {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+.ProviderSub {
+    width: 100px;
+    height: 40px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.Provider {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.ProviderLink {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

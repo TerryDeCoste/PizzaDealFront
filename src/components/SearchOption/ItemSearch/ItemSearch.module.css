@@ -1,0 +1,22 @@
+.ItemBox{
+    display: flex;
+    border: 1px solid #11400f;
+    border-radius: 5px;
+}
+.ItemName, .ItemSize, .ItemOptions, .ItemCount {
+    margin: 3px;
+}
+.ItemName {
+    font-weight: bold;
+}
+.ItemRemoveButton{
+    border: 1px solid #11400f;
+    border-radius: 5px;
+    background-color: #780116;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: sans-serif;
+    margin: 3px;
+    margin-left: auto;
+}

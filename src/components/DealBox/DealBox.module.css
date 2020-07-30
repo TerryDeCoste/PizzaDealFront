@@ -1,0 +1,70 @@
+.DealBox {
+    width: 95%;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px #780116 solid;
+    background-color: #DB7C26;
+    color: black;
+    display: grid;
+    grid-template-columns: 100px auto 110px;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "logo dealname pricebox"
+        "itemlist itemlist pricebox";
+}
+
+.Logo{
+    grid-area: logo;
+    width: 100px;
+    height: 40px;
+    border: 1px black solid;
+    background-color: #780116;
+    color: white;
+}
+
+.DealName{
+    grid-area: dealname;
+    min-height: 40px;
+    text-overflow: wrap;
+    border: 1px black solid;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 0px 1px 0px 8px;
+}
+
+.ItemBox{
+    grid-area: itemlist;
+    font-size: large;
+    padding: 2px;
+    background-color: #11400f;
+    color: white;
+}
+
+.ItemList{
+    list-style: none;
+    margin: 0;
+    padding: 2px 10px;
+}
+
+.PriceBox{
+    grid-area: pricebox;
+    padding: 5px;
+    border: 1px black solid;
+    background-color: #780116;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.LogoImg {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.LogoLink {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

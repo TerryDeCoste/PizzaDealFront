@@ -1,0 +1,442 @@
+[
+    {
+      "logo": "ginospizza.png",
+      "website": "https://ginospizza.ca/",
+      "dealname": "WEDNESDAY SPECIAL",
+      "description": "1 Extra Large Pizza with 2 Toppings, & 2 Bottles of Pop",
+      "price": 17.99,
+      "value": 1,
+      "distance": 2.0461867560590923,
+      "items": [
+        "1 X-Large Pizza with 2 toppings",
+        "2 591ml Pop Bottles"
+      ],
+      "itemObjs": [
+        {
+          "id": "1",
+          "item": {
+            "id": "1",
+            "name": "Pizza"
+          },
+          "itemCount": 1,
+          "size": {
+            "id": "1",
+            "name": "X-Large"
+          },
+          "option": {
+            "id": "1",
+            "name": "topping"
+          },
+          "optionCount": 2,
+          "itemText": "1 X-Large Pizza with 2 toppings"
+        },
+        {
+          "id": "2",
+          "item": {
+            "id": "2",
+            "name": "Pop Bottle"
+          },
+          "itemCount": 2,
+          "size": {
+            "id": "2",
+            "name": "591ml"
+          },
+          "optionCount": 0,
+          "itemText": "2 591ml Pop Bottles"
+        }
+      ]
+    },
+    {
+      "logo": "ginospizza.png",
+      "website": "https://ginospizza.ca/",
+      "dealname": "CAULI NUEVO",
+      "description": "Broccoli, Mushroom, and Pesto Spread instead of Pizza Sauce",
+      "price": 15.99,
+      "value": 1,
+      "distance": 2.0461867560590923,
+      "items": [
+        "1 Medium Pizza with 1 premium_topping"
+      ],
+      "itemObjs": [
+        {
+          "id": "1",
+          "item": {
+            "id": "1",
+            "name": "Pizza"
+          },
+          "itemCount": 1,
+          "size": {
+            "id": "3",
+            "name": "Medium"
+          },
+          "option": {
+            "id": "2",
+            "name": "premium_topping"
+          },
+          "optionCount": 1,
+          "itemText": "1 Medium Pizza with 1 premium_topping"
+        }
+      ]
+    },
+    {
+      "logo": "ginospizza.png",
+      "website": "https://ginospizza.ca/",
+      "dealname": "LARGE WEB SPECIAL",
+      "description": "Large Pizza with 5 Toppings, 1 Free Dipping Sauce",
+      "price": 14.99,
+      "value": 1,
+      "distance": 2.0461867560590923,
+      "items": [
+        "1 Large Pizza with 5 toppings",
+        "1 Dipping Sauce"
+      ],
+      "itemObjs": [
+        {
+          "id": "1",
+          "item": {
+            "id": "1",
+            "name": "Pizza"
+          },
+          "itemCount": 1,
+          "size": {
+            "id": "4",
+            "name": "Large"
+          },
+          "option": {
+            "id": "1",
+            "name": "topping"
+          },
+          "optionCount": 5,
+          "itemText": "1 Large Pizza with 5 toppings"
+        },
+        {
+          "id": "3",
+          "item": {
+            "id": "3",
+            "name": "Dipping Sauce"
+          },
+          "itemCount": 1,
+          "optionCount": 0,
+          "itemText": "1 Dipping Sauce"
+        }
+      ]
+    },
+    {
+      "logo": "ginospizza.png",
+      "website": "https://ginospizza.ca/",
+      "dealname": "GINO'S ORIGINAL",
+      "description": "Two Pizzas with 3 Toppings on each & 2 Free Dipping Sauces",
+      "price": 22.99,
+      "value": 1,
+      "distance": 2.0461867560590923,
+      "items": [
+        "2 Medium Pizzas with 3 toppings",
+        "2 Dipping Sauces"
+      ],
+      "itemObjs": [
+        {
+          "id": "1",
+          "item": {
+            "id": "1",
+            "name": "Pizza"
+          },
+          "itemCount": 2,
+          "size": {
+            "id": "3",
+            "name": "Medium"
+          },
+          "option": {
+            "id": "1",
+            "name": "topping"
+          },
+          "optionCount": 3,
+          "itemText": "2 Medium Pizzas with 3 toppings"
+        },
+        {
+          "id": "3",
+          "item": {
+            "id": "3",
+            "name": "Dipping Sauce"
+          },
+          "itemCount": 2,
+          "optionCount": 0,
+          "itemText": "2 Dipping Sauces"
+        }
+      ]
+    },
+    {
+      "logo": "ginospizza.png",
+      "website": "https://ginospizza.ca/",
+      "dealname": "GINO'S ORIGINAL",
+      "description": "Two Pizzas with 3 Toppings on each & 2 Free Dipping Sauces",
+      "price": 26.99,
+      "value": 1,
+      "distance": 2.0461867560590923,
+      "items": [
+        "2 Large Pizzas with 3 toppings",
+        "2 Dipping Sauces"
+      ],
+      "itemObjs": [
+        {
+          "id": "1",
+          "item": {
+            "id": "1",
+            "name": "Pizza"
+          },
+          "itemCount": 2,
+          "size": {
+            "id": "4",
+            "name": "Large"
+          },
+          "option": {
+            "id": "1",
+            "name": "topping"
+          },
+          "optionCount": 3,
+          "itemText": "2 Large Pizzas with 3 toppings"
+        },
+        {
+          "id": "3",
+          "item": {
+            "id": "3",
+            "name": "Dipping Sauce"
+          },
+          "itemCount": 2,
+          "optionCount": 0,
+          "itemText": "2 Dipping Sauces"
+        }
+      ]
+    },
+    {
+      "logo": "ginospizza.png",
+      "website": "https://ginospizza.ca/",
+      "dealname": "GINO'S ORIGINAL",
+      "description": "Two Pizzas with 3 Toppings on each & 2 Free Dipping Sauces",
+      "price": 30.99,
+      "value": 1,
+      "distance": 2.0461867560590923,
+      "items": [
+        "2 X-Large Pizzas with 3 toppings",
+        "2 Dipping Sauces"
+      ],
+      "itemObjs": [
+        {
+          "id": "1",
+          "item": {
+            "id": "1",
+            "name": "Pizza"
+          },
+          "itemCount": 2,
+          "size": {
+            "id": "1",
+            "name": "X-Large"
+          },
+          "option": {
+            "id": "1",
+            "name": "topping"
+          },
+          "optionCount": 3,
+          "itemText": "2 X-Large Pizzas with 3 toppings"
+        },
+        {
+          "id": "3",
+          "item": {
+            "id": "3",
+            "name": "Dipping Sauce"
+          },
+          "itemCount": 2,
+          "optionCount": 0,
+          "itemText": "2 Dipping Sauces"
+        }
+      ]
+    },
+    {
+      "logo": "ginospizza.png",
+      "website": "https://ginospizza.ca/",
+      "dealname": "PANZEROTTI COMBO",
+      "description": "2 Panzerotti with 3 Toppings in each, 2 591ml Bottles of Pop, 2 FREE Marinara Sauces",
+      "price": 14.99,
+      "value": 1,
+      "distance": 2.0461867560590923,
+      "items": [
+        "2 7-inch Panzerottis with 3 toppings",
+        "2 591ml Pop Bottles",
+        "2 Marinari Saucess"
+      ],
+      "itemObjs": [
+        {
+          "id": "4",
+          "item": {
+            "id": "4",
+            "name": "Panzerotti"
+          },
+          "itemCount": 2,
+          "size": {
+            "id": "5",
+            "name": "7-inch"
+          },
+          "option": {
+            "id": "1",
+            "name": "topping"
+          },
+          "optionCount": 3,
+          "itemText": "2 7-inch Panzerottis with 3 toppings"
+        },
+        {
+          "id": "2",
+          "item": {
+            "id": "2",
+            "name": "Pop Bottle"
+          },
+          "itemCount": 2,
+          "size": {
+            "id": "2",
+            "name": "591ml"
+          },
+          "optionCount": 0,
+          "itemText": "2 591ml Pop Bottles"
+        },
+        {
+          "id": "5",
+          "item": {
+            "id": "5",
+            "name": "Marinari Sauces"
+          },
+          "itemCount": 2,
+          "optionCount": 0,
+          "itemText": "2 Marinari Saucess"
+        }
+      ]
+    },
+    {
+      "logo": "ginospizza.png",
+      "website": "https://ginospizza.ca/",
+      "dealname": "PIZZA & WINGS COMBO",
+      "description": "Large Pizza with 3 Toppings, 10 Wings,16 Flavored Bites, and 1 Free Dipping Sauce",
+      "price": 26.99,
+      "value": 1,
+      "distance": 2.0461867560590923,
+      "items": [
+        "1 Large Pizza with 3 toppings",
+        "1 10-pack Wings",
+        "1 16-Flavoured Bites",
+        "1 Dipping Sauce"
+      ],
+      "itemObjs": [
+        {
+          "id": "1",
+          "item": {
+            "id": "1",
+            "name": "Pizza"
+          },
+          "itemCount": 1,
+          "size": {
+            "id": "4",
+            "name": "Large"
+          },
+          "option": {
+            "id": "1",
+            "name": "topping"
+          },
+          "optionCount": 3,
+          "itemText": "1 Large Pizza with 3 toppings"
+        },
+        {
+          "id": "6",
+          "item": {
+            "id": "6",
+            "name": "Wings"
+          },
+          "itemCount": 1,
+          "size": {
+            "id": "6",
+            "name": "10-pack"
+          },
+          "optionCount": 0,
+          "itemText": "1 10-pack Wings"
+        },
+        {
+          "id": "7",
+          "item": {
+            "id": "7",
+            "name": "Bites"
+          },
+          "itemCount": 1,
+          "size": {
+            "id": "7",
+            "name": "16-Flavoured"
+          },
+          "optionCount": 0,
+          "itemText": "1 16-Flavoured Bites"
+        },
+        {
+          "id": "3",
+          "item": {
+            "id": "3",
+            "name": "Dipping Sauce"
+          },
+          "itemCount": 1,
+          "optionCount": 0,
+          "itemText": "1 Dipping Sauce"
+        }
+      ]
+    },
+    {
+      "logo": "ginospizza.png",
+      "website": "https://ginospizza.ca/",
+      "dealname": "SINGLE DEAL",
+      "description": "1 Pizza with 3 Toppings, 2 591ml Bottles of Pop & 1 FREE Dipping Sauce",
+      "price": 12.99,
+      "value": 1,
+      "distance": 2.0461867560590923,
+      "items": [
+        "1 Small Pizza with 3 toppings",
+        "2 591ml Pop Bottles",
+        "1 Dipping Sauce"
+      ],
+      "itemObjs": [
+        {
+          "id": "1",
+          "item": {
+            "id": "1",
+            "name": "Pizza"
+          },
+          "itemCount": 1,
+          "size": {
+            "id": "8",
+            "name": "Small"
+          },
+          "option": {
+            "id": "1",
+            "name": "topping"
+          },
+          "optionCount": 3,
+          "itemText": "1 Small Pizza with 3 toppings"
+        },
+        {
+          "id": "2",
+          "item": {
+            "id": "2",
+            "name": "Pop Bottle"
+          },
+          "itemCount": 2,
+          "size": {
+            "id": "2",
+            "name": "591ml"
+          },
+          "optionCount": 0,
+          "itemText": "2 591ml Pop Bottles"
+        },
+        {
+          "id": "3",
+          "item": {
+            "id": "3",
+            "name": "Dipping Sauce"
+          },
+          "itemCount": 1,
+          "optionCount": 0,
+          "itemText": "1 Dipping Sauce"
+        }
+      ]
+    }
+  ]

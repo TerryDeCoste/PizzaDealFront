@@ -1,0 +1,33 @@
+.LocationBox{
+    width: 100%;
+    display: flex;
+}
+.LocationColumns{
+    display: flex;
+    flex-direction: column;
+}
+
+.InputField{
+    width: 200px;
+}
+
+.FindMeButton
+{
+    font-size: large;
+    border: 1px #11400f solid;
+    border-radius: 5%;
+    background-color: #11400f;
+    color: white;
+    font-weight: bold;
+    margin: 2px;
+    padding: 5px;
+}
+
+.ItemSelectors{
+    width: 100%;
+}
+
+.ItemSelectLabels{
+    display: inline-block;
+    width: 70px;
+}
