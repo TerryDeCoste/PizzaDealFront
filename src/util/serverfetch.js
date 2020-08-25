@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3030";
+const BASE_URL = process.env.PUBLIC_URL || "http://localhost:3030";
 
 module.exports = (url, data={}) => {
     return fetch(BASE_URL + url, {

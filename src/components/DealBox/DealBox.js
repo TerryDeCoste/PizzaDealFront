@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './DealBox.module.css';
 
+import StarIcons from './StarIcons/StarIcons';
+
 const dealbox = (props) => {
     const specialTop = props.info.itemObjs.find(item => item.option && item.option.name === 'premium_topping');
     let description = null;
@@ -27,8 +29,8 @@ const dealbox = (props) => {
             </div>
             <div className={classes.PriceBox}>
                 <div>$: {props.info.price}</div>
-                <div>V: {props.info.value}/5</div>
-                <div>   *****</div>
+                <div>V: {props.info.value.toFixed(1)}/5</div>
+                <StarIcons rating={props.info.value}/>
                 <div>{props.info.distance.toFixed(1)} km</div>
             </div>
         </div>
