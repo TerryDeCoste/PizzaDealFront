@@ -45,7 +45,7 @@ describe('Location module', () => {
     });
 
     test('Find Me Button triggers properly', async () => {
-        userEvent.click(screen.getByRole('button', { name: /find me/i }));
+        userEvent.click(screen.getByRole('button', { name: /use my current location/i }));
         expect(mockFindMe).toHaveBeenCalledTimes(1);
     });
     test('Finds the location when typing', async () => {
@@ -59,10 +59,10 @@ describe('Search', () => {
         await act(async () => { await render(<App />); });
 
         //default criteria
-        const searchButton = await screen.findAllByText(/Find It!/i);
+        const searchButton = await screen.findAllByText(/Search!/i);
         await act(async () => { await userEvent.click(searchButton[0]); });
 
-        expect(await screen.findByText(/CAULI FRESCA/i)).toBeInTheDocument();
+        expect(await screen.findByText(/TEST WITH PIZZA OBJECTS/i)).toBeInTheDocument();
     });
     test('Displays no deals with adjusted criteria', async () => {
         await act(async () => { await render(<App />); });
@@ -73,11 +73,30 @@ describe('Search', () => {
         fireEvent.change(priceLimit);
 
         //click button
-        const searchButton = await screen.findAllByText(/Find It!/i);
+        const searchButton = await screen.findAllByText(/Search!/i);
         await act(async () => { await userEvent.click(searchButton[0]); });
 
         expect(await screen.findByText(/No deals found, please check your criteria./i)).toBeInTheDocument();
     });
+    test('Back button triggers new search with no criteria', async () => {
+      await act(async () => { await render(<App />); });
+
+      //change criteria
+      const priceLimit = screen.getByText(/Price Limit/i).parentElement.children[1].children[0];
+      priceLimit.value = 5;
+      fireEvent.change(priceLimit);
+
+      //click button
+      const searchButton = await screen.findAllByText(/Search!/i);
+      await act(async () => { await userEvent.click(searchButton[0]); });
+      await screen.findByText(/No deals found, please check your criteria./i);
+
+      //back button
+      const backButton = await screen.findAllByText(/back/i);
+      await act(async () => { await userEvent.click(backButton[0]); });
+
+      expect(await screen.findByText(/Items/i)).toBeInTheDocument();
+  });
 });
 
 import SearchBox from '../containers/SearchBox/SearchBox';
@@ -107,7 +126,7 @@ describe('Search Criteria Change', () => {
         expect(mockSetSearchCriteria).toHaveBeenCalledTimes(2); //one to set, one to update
         expect(mockSetSearchCriteria.mock.calls[1][0].priceLimit).toBe('5');
 
-        userEvent.click(screen.getAllByRole('button', { name: /find it/i })[0]);
+        userEvent.click(screen.getAllByRole('button', { name: /search/i })[0]);
         expect(mockSearchClick).toHaveBeenCalledTimes(1);
     });
     test('Delivery Required Change and trigger', async () => {
@@ -118,7 +137,7 @@ describe('Search Criteria Change', () => {
         expect(mockSetSearchCriteria).toHaveBeenCalledTimes(2); //one to set, one to update
         expect(mockSetSearchCriteria.mock.calls[1][0].deliveryRequired).toBe('yes');
 
-        userEvent.click(screen.getAllByRole('button', { name: /find it/i })[0]);
+        userEvent.click(screen.getAllByRole('button', { name: /search/i })[0]);
         expect(mockSearchClick).toHaveBeenCalledTimes(1);
     });
     test('Order By Change and trigger', async () => {
@@ -129,7 +148,7 @@ describe('Search Criteria Change', () => {
         expect(mockSetSearchCriteria).toHaveBeenCalledTimes(2); //one to set, one to update
         expect(mockSetSearchCriteria.mock.calls[1][0].orderBy).toBe('price');
 
-        userEvent.click(screen.getAllByRole('button', { name: /find it/i })[0]);
+        userEvent.click(screen.getAllByRole('button', { name: /search/i })[0]);
         expect(mockSearchClick).toHaveBeenCalledTimes(1);
     });
     test('Items: Add - proper size, count, options, option counts', async () => {

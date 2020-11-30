@@ -10,5 +10,24 @@
 }
 
 .Copyright {
+    padding: 0 0.25rem;
+    text-align: center;
+    display: inline-block;
+}
+.SiteLink{
+    padding: 0 0.25rem;
+    display: inline-block;
+}
+.SiteLink a {
+    text-decoration: none;
+    color: lightgreen;
+    font-weight: bold;
+}
+.SiteLink a:hover{
+    color: lightblue;
+    font-weight: bolder;
+}
+.BottomBox{
+    margin: auto;
     text-align: center;
 }

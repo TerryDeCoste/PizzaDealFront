@@ -1,0 +1,281 @@
+[
+    {
+      "name": "Domino's Pizza",
+      "distance": 0.9878051615528793,
+      "bestprice": 31.98,
+      "bestvalue": 4.99618877284229,
+      "store": {
+        "logo": "dominospizza.png",
+        "website": "https://www.dominos.ca/"
+      },
+      "deals": [
+        {
+          "id": "49",
+          "dealname": "TEST WITH PIZZA OBJECTS",
+          "price": 15.99,
+          "value": 2.06582768633962,
+          "count": 2,
+          "items": [
+            "1 X-Large Pizza with 4 toppings"
+          ],
+          "itemObjs": [
+            {
+              "id": "1",
+              "item": {
+                "id": "1",
+                "name": "Pizza"
+              },
+              "itemCount": 1,
+              "size": {
+                "id": "1",
+                "name": "X-Large"
+              },
+              "option": {
+                "id": "1",
+                "name": "topping"
+              },
+              "optionCount": 4,
+              "itemText": "1 X-Large Pizza with 4 toppings"
+            }
+          ]
+        },
+        {
+          "id": "47",
+          "dealname": "COUPON: 5415",
+          "price": 40.99,
+          "value": 4.99618877284229,
+          "count": 1,
+          "items": [
+            "3 X-Large Pizzas with 3 toppings"
+          ],
+          "itemObjs": [
+            {
+              "id": "1",
+              "item": {
+                "id": "1",
+                "name": "Pizza"
+              },
+              "itemCount": 3,
+              "size": {
+                "id": "1",
+                "name": "X-Large"
+              },
+              "option": {
+                "id": "1",
+                "name": "topping"
+              },
+              "optionCount": 3,
+              "itemText": "3 X-Large Pizzas with 3 toppings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gino's Pizza",
+      "distance": 3.23992010321739,
+      "bestprice": 30.99,
+      "bestvalue": 4.78035951405764,
+      "store": {
+        "logo": "ginospizza.png",
+        "website": "https://ginospizza.ca/"
+      },
+      "deals": [
+        {
+          "id": "7",
+          "dealname": "GINO'S ORIGINAL",
+          "price": 30.99,
+          "value": 4.48432059958577,
+          "count": 1,
+          "items": [
+            "2 X-Large Pizzas with 3 toppings",
+            "2 Dipping Sauces"
+          ],
+          "itemObjs": [
+            {
+              "id": "1",
+              "item": {
+                "id": "1",
+                "name": "Pizza"
+              },
+              "itemCount": 2,
+              "size": {
+                "id": "1",
+                "name": "X-Large"
+              },
+              "option": {
+                "id": "1",
+                "name": "topping"
+              },
+              "optionCount": 3,
+              "itemText": "2 X-Large Pizzas with 3 toppings"
+            },
+            {
+              "id": "3",
+              "item": {
+                "id": "3",
+                "name": "Dipping Sauce"
+              },
+              "itemCount": 2,
+              "optionCount": 0,
+              "itemText": "2 Dipping Sauces"
+            }
+          ]
+        },
+        {
+          "id": "13",
+          "dealname": "SINGLE DEAL",
+          "price": 19.99,
+          "value": 4.78035951405764,
+          "count": 2,
+          "items": [
+            "1 X-Large Pizza with 3 toppings",
+            "2 591ml Pop Bottles",
+            "1 Dipping Sauce"
+          ],
+          "itemObjs": [
+            {
+              "id": "1",
+              "item": {
+                "id": "1",
+                "name": "Pizza"
+              },
+              "itemCount": 1,
+              "size": {
+                "id": "1",
+                "name": "X-Large"
+              },
+              "option": {
+                "id": "1",
+                "name": "topping"
+              },
+              "optionCount": 3,
+              "itemText": "1 X-Large Pizza with 3 toppings"
+            },
+            {
+              "id": "2",
+              "item": {
+                "id": "2",
+                "name": "Pop Bottle"
+              },
+              "itemCount": 2,
+              "size": {
+                "id": "2",
+                "name": "591ml"
+              },
+              "optionCount": 0,
+              "itemText": "2 591ml Pop Bottles"
+            },
+            {
+              "id": "3",
+              "item": {
+                "id": "3",
+                "name": "Dipping Sauce"
+              },
+              "itemCount": 1,
+              "optionCount": 0,
+              "itemText": "1 Dipping Sauce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Apollo Pizza and Wings",
+      "distance": 2.8233533119804175,
+      "bestprice": 30.95,
+      "bestvalue": 4.73995744436979,
+      "store": {
+        "logo": "ApolloPizzaLogo.png",
+        "website": "http://www.apollopizzalondon.ca/"
+      },
+      "deals": [
+        {
+          "id": "67",
+          "dealname": "X-Large Single Pizza Deal",
+          "price": 21.95,
+          "value": 4.73995744436979,
+          "count": 2,
+          "items": [
+            "1 X-Large Pizza with 3 toppings"
+          ],
+          "itemObjs": [
+            {
+              "id": "1",
+              "item": {
+                "id": "1",
+                "name": "Pizza"
+              },
+              "itemCount": 1,
+              "size": {
+                "id": "1",
+                "name": "X-Large"
+              },
+              "option": {
+                "id": "1",
+                "name": "topping"
+              },
+              "optionCount": 3,
+              "itemText": "1 X-Large Pizza with 3 toppings"
+            }
+          ]
+        },
+        {
+          "id": "87",
+          "dealname": "X-Large Double Pizza Deal",
+          "price": 30.95,
+          "value": 4.1183269713074,
+          "count": 1,
+          "items": [
+            "2 X-Large Pizzas with 3 toppings",
+            "2 355ml Pops",
+            "1 Dip"
+          ],
+          "itemObjs": [
+            {
+              "id": "1",
+              "item": {
+                "id": "1",
+                "name": "Pizza"
+              },
+              "itemCount": 2,
+              "size": {
+                "id": "1",
+                "name": "X-Large"
+              },
+              "option": {
+                "id": "1",
+                "name": "topping"
+              },
+              "optionCount": 3,
+              "itemText": "2 X-Large Pizzas with 3 toppings"
+            },
+            {
+              "id": "13",
+              "item": {
+                "id": "13",
+                "name": "Pop"
+              },
+              "itemCount": 2,
+              "size": {
+                "id": "18",
+                "name": "355ml"
+              },
+              "optionCount": 0,
+              "itemText": "2 355ml Pops"
+            },
+            {
+              "id": "10",
+              "item": {
+                "id": "10",
+                "name": "Dip"
+              },
+              "itemCount": 1,
+              "optionCount": 0,
+              "itemText": "1 Dip"
+            }
+          ]
+        }
+      ]
+    }
+  ]

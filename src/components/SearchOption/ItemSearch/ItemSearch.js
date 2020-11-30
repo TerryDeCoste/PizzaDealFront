@@ -34,14 +34,18 @@ const itemBox = (item, addUpdateItem, key) => {
 }
 
 const itemSelector = (id, label, onchange, itemList, value) => (
-    <div className={classes.ItemSelectors} >
-        <label htmlFor={id} className={classes.ItemSelectLabels}>
-            {label}: 
-        </label>
-        <select id={id} value={value} onChange={onchange}>
-            {itemList}
-        </select>
-    </div>
+    <tr className={classes.ItemSelectors} >
+        <td>
+          <label htmlFor={id} className={classes.ItemSelectLabels}>
+              {label}: 
+          </label>
+        </td>
+        <td>
+            <select id={id} value={value} onChange={onchange}>
+                {itemList}
+            </select>
+        </td>
+    </tr>
 )
 
 export default (props) => {
@@ -160,11 +164,13 @@ export default (props) => {
     
     return (
         <div>
-            {itemSelector("item_select", "Item", onChangeItem, itemDD, selectedItem)}
-            {itemSelector("size_select", "Size", (event) => setSize(Number(event.target.value)), sizeDD, size)}
-            {itemSelector("count_select", "Count", (event) => setCount(Number(event.target.value)), countDD, count)}
-            {itemSelector("option_select", "Options", (event) => setOption(event.target.value), optionsDD, option)}
-            {itemSelector("option_count_select", "OptionCount", (event) => setOptionCount(Number(event.target.value)), optionCountDD, optionCount)}
+            <table><tbody>
+                {itemSelector("item_select", "Item", onChangeItem, itemDD, selectedItem)}
+                {itemSelector("size_select", "Size", (event) => setSize(Number(event.target.value)), sizeDD, size)}
+                {itemSelector("count_select", "Count", (event) => setCount(Number(event.target.value)), countDD, count)}
+                {itemSelector("option_select", "Options", (event) => setOption(event.target.value), optionsDD, option)}
+                {itemSelector("option_count_select", "OptionCount", (event) => setOptionCount(Number(event.target.value)), optionCountDD, optionCount)}  
+            </tbody></table>
 
             <div>
                 <button id="btn_add_item" className={classes.FindMeButton} onClick={addNewItem}>Add Item</button>

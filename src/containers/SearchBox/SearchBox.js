@@ -50,8 +50,8 @@ const searchOptions = [
         display: "Order By",
         type: "Dropdown",
         options: [
-            { key: "value", display: "Best Value" }, 
             { key: "price", display: "Lowest Price" }, 
+            { key: "value", display: "Best Value" }, 
             { key: "distance", display: "Closest Store" }, 
         ],
     },
@@ -74,7 +74,7 @@ export default (props) => {
 
     const [priceLimit, setPriceLimit] = useState("all");
     const [deliveryRequired, setDeliveryRequired] = useState("no");
-    const [orderBy, setOrderBy] = useState("value");
+    const [orderBy, setOrderBy] = useState("price");
     const [items, setItems] = useState([]);
 
     const locationFindMe = () => {
@@ -190,7 +190,7 @@ export default (props) => {
             </tbody></table>
             <div className={classes.FindBar}>
                 <div></div>
-                <div><button className={classes.FindButton} onClick={props.searchClick}>Find It!</button></div>
+                <div><button className={classes.FindButton} onClick={props.searchClick}>Search!</button></div>
             </div>
         </React.Fragment>
     ) : null;
@@ -216,7 +216,7 @@ export default (props) => {
         <div className={classes.SearchBox}>
             <div className={classes.FindBar}>
                 <div>Find Your Deal:</div>
-                <div><button className={classes.FindButton} onClick={props.searchClick}>Find It!</button></div>
+                <div><button className={classes.FindButton} onClick={props.searchClick}>Search!</button></div>
             </div>
             {searchHtml}
         </div>

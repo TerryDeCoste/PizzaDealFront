@@ -13,7 +13,6 @@ const layout = (props) => {
         <div className={classes.Container}>
             <header className={classes.TopBar}>
                 <div id="logo" className={classes.Logo}><Logo></Logo></div>
-                {/* <div id="subheader"  className={classes.SubHeader}>SubHeader</div> */}
             </header>
             <main className={classes.Content}>
                 {props.children}

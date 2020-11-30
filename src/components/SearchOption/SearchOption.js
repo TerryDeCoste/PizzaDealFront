@@ -20,7 +20,7 @@ const dropdown = (name, options, onchange, value) => {
 const location = (findMe, typeLocation, location) => {
     return (<div className={classes.LocationBox}>
         <div className={classes.LocationColumns}>
-            <button id="btn_find_me" className={classes.FindMeButton} onClick={findMe}>Find Me</button>
+            <button id="btn_find_me" className={classes.FindMeButton} onClick={findMe}>Use My Current Location</button>
             <input type="text" id="location_input" className={classes.InputField} onChange={typeLocation} value={location}></input>
         </div>
     </div>);

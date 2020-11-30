@@ -44,7 +44,7 @@ const App = (props) => {
     if (!searchDisplay) {
       setSearchDisplay(true);
     } else {
-      serverFetch('/search', searchCriteria)
+      serverFetch('/searchbychain', searchCriteria)
       .then(response => {
         setDealInfo(response);
         setSearchDisplay(false);
@@ -58,7 +58,7 @@ const App = (props) => {
       <TopDeals deals={topDeals}></TopDeals>
       
       <SearchBox searchClick={onSearchClick} searchDisplay={searchDisplay} setSearchCriteria={setSearchCriteria}></SearchBox>
-      <SearchOutput deals={dealInfo} initial={initial} ></SearchOutput>
+      <SearchOutput deals={dealInfo} initial={initial} backClick={onSearchClick} ></SearchOutput>
 
       <DealProviders providers={providers} ></DealProviders>
     </Layout>

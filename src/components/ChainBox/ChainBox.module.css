@@ -1,0 +1,133 @@
+.ChainBox {
+    width: 95%;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px #780116 solid;
+    background-color: #DB7C26;
+    color: black;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.LeftColumn{
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 11rem;
+    max-width: 14rem;
+}
+
+.Logo{
+    grid-area: logo;
+    height: 6rem;
+    border: 1px black solid;
+    background-color: #780116;
+    color: white;
+    padding: 0.25rem;
+}
+
+.ChainName{
+    border: 1px solid black;
+    background-color: #11400f;
+    color: white;
+    padding: 0.25rem;
+}
+.Distance{
+    border: 1px solid black;
+    padding: 0.25rem;
+}
+
+.RightColumn{
+    flex-grow: 8;
+}
+
+.DealBoxes{
+    margin: 0 0 0.25rem 0.25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.DealLeft{
+    flex-grow: 4;
+}
+
+.DealName{
+    min-height: 2.5rem;
+    text-overflow: wrap;
+    border: 1px black solid;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 0px 1px 0px 8px;
+}
+
+.ItemBox{
+    font-size: large;
+    padding: 2px;
+    background-color: #11400f;
+    color: white;
+    min-height: 5rem;
+}
+
+.ItemList{
+    list-style: none;
+    margin: 0;
+    padding: 2px 10px;
+}
+
+.PriceBox{
+    width: 8.5rem;
+    grid-area: pricebox;
+    padding: 5px;
+    border: 1px black solid;
+    background-color: #780116;
+    color: white;
+}
+.PriceLabel{
+    font-size: medium;
+    padding-right: 0.5rem;
+    text-align: right;
+}
+.PriceValue{
+    font-weight: bold;
+    font-size: large;
+}
+.PriceTotalValue{
+    font-weight: bold;
+    font-size: x-large;
+}
+.PriceTable{
+    border-spacing: 0;
+}
+
+.LogoImg {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.LogoLink {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.FlagBox{
+    border: 1px solid black;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    font-weight: bold;
+    min-height: 7.75rem;
+}
+.BestPrice{
+    background-color: green;
+    color: white;
+    padding-top: 0.75rem;
+}
+.BestValue{
+    background-color: blue;
+    color: white;
+    padding-top: 0.75rem;
+}
