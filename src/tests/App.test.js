@@ -142,11 +142,11 @@ describe('Search Criteria Change', () => {
     });
     test('Order By Change and trigger', async () => {
         const orderBy = screen.getByText(/Order By/i).parentElement.children[1].children[0];
-        orderBy.value = 'price';
+        orderBy.value = 'value';
         fireEvent.change(orderBy);
 
         expect(mockSetSearchCriteria).toHaveBeenCalledTimes(2); //one to set, one to update
-        expect(mockSetSearchCriteria.mock.calls[1][0].orderBy).toBe('price');
+        expect(mockSetSearchCriteria.mock.calls[1][0].orderBy).toBe('value');
 
         userEvent.click(screen.getAllByRole('button', { name: /search/i })[0]);
         expect(mockSearchClick).toHaveBeenCalledTimes(1);
@@ -162,10 +162,12 @@ describe('Search Criteria Change', () => {
         expect(defaultItem).toHaveTextContent(/topping/i);
         
         //fire change event to make sure update shown properly
-        fireEvent.change(screen.getByText(/Order By/i).parentElement.children[1].children[0]);
-
+        const orderBy = screen.getByText(/Order By/i).parentElement.children[1].children[0];
+        orderBy.value = 'value';
+        fireEvent.change(orderBy);
+        
         //verify search criteria has correct item
-        expect(mockSetSearchCriteria).toHaveBeenCalledTimes(2);
+        expect(mockSetSearchCriteria).toHaveBeenCalledTimes(3);
         const firstItem = mockSetSearchCriteria.mock.calls[1][0].items[0];
         expect(firstItem.name).toBe('Pizza');
         expect(firstItem.size).toBe('X-Large');
@@ -177,22 +179,23 @@ describe('Search Criteria Change', () => {
         //change options, add
         screen.getByLabelText(/Item:/i).value = 4;
         fireEvent.change(screen.getByLabelText(/Item:/i));
-        screen.getByLabelText(/Size:/i).value = 3;
+        screen.getByLabelText(/Size:/i).value = 5;
         fireEvent.change(screen.getByLabelText(/Size:/i));
         screen.getAllByLabelText(/Count:/i)[0].value = 2;
         fireEvent.change(screen.getAllByLabelText(/Count:/i)[0]);
-        screen.getByLabelText(/Options:/i).value = 'premium_topping';
+        screen.getByLabelText(/Options:/i).value = 'topping';
         fireEvent.change(screen.getByLabelText(/Options:/i));
         screen.getByLabelText(/OptionCount:/i).value = 3;
         fireEvent.change(screen.getByLabelText(/OptionCount:/i));
         
         userEvent.click(screen.getByRole('button', { name: /Add Item/i }));
         //fire change event to make sure update shown properly
-        fireEvent.change(screen.getByText(/Order By/i).parentElement.children[1].children[0]);
+        orderBy.value = 'price';
+        fireEvent.change(orderBy);
 
         //check second item
-        expect(mockSetSearchCriteria).toHaveBeenCalledTimes(3);
-        const secondItem = mockSetSearchCriteria.mock.calls[2][0].items[1];
+        expect(mockSetSearchCriteria).toHaveBeenCalledTimes(5);
+        const secondItem = mockSetSearchCriteria.mock.calls[4][0].items[1];
         expect(secondItem.name).toBe('Panzerotti');
         expect(secondItem.size).toBe('7-inch');
         expect(secondItem.options).toBe('topping');

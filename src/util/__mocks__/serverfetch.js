@@ -25,7 +25,7 @@ module.exports = jest.fn((url, data={}) => {
         if (data.location.text === 'City, Province or Postal Code'
             && data.priceLimit === 'all'
             && data.deliveryRequired === 'no'
-            && data.orderBy === 'value'
+            && data.orderBy === 'price'
             && data.items.length === 0
         ){
             return Promise.resolve(searchDefaultResponse);      
@@ -36,7 +36,7 @@ module.exports = jest.fn((url, data={}) => {
       if (data.location.text === 'City, Province or Postal Code'
           && data.priceLimit === 'all'
           && data.deliveryRequired === 'no'
-          && data.orderBy === 'value'
+          && data.orderBy === 'price'
           && data.items.length === 0
       ){
           return Promise.resolve(searchByChainDefaultResponse);      
